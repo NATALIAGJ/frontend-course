@@ -21,6 +21,9 @@ const config = {
   plugins: ["@typescript-eslint"],
   extends: ["next/core-web-vitals", "plugin:@typescript-eslint/recommended"],
   rules: {
+    "@typescript-eslint/restrict-template-expressions": "error",
+    "@typescript-eslint/no-unsafe-assignment": "error",
+    "@typescript-eslint/no-floating-promises": "error",
     "@typescript-eslint/consistent-type-imports": [
       "warn",
       {
